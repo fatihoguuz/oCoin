@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D0381972C57B6D300972520 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0381962C57B6D300972520 /* Crypto.swift */; };
+		3D0381992C57C76200972520 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0381982C57C76200972520 /* Webservice.swift */; };
 		3DD56EA02C56CD9900064725 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD56E9F2C56CD9900064725 /* AppDelegate.swift */; };
 		3DD56EA22C56CD9900064725 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD56EA12C56CD9900064725 /* SceneDelegate.swift */; };
 		3DD56EA42C56CD9900064725 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD56EA32C56CD9900064725 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		3D0381962C57B6D300972520 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		3D0381982C57C76200972520 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		3DD56E9C2C56CD9900064725 /* oCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD56E9F2C56CD9900064725 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DD56EA12C56CD9900064725 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 		3D0381942C57AF4700972520 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				3D0381982C57C76200972520 /* Webservice.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				3D0381972C57B6D300972520 /* Crypto.swift in Sources */,
 				3DD56EA42C56CD9900064725 /* ViewController.swift in Sources */,
 				3DD56EA02C56CD9900064725 /* AppDelegate.swift in Sources */,
+				3D0381992C57C76200972520 /* Webservice.swift in Sources */,
 				3DD56EA22C56CD9900064725 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
