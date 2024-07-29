@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D0381972C57B6D300972520 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0381962C57B6D300972520 /* Crypto.swift */; };
 		3DD56EA02C56CD9900064725 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD56E9F2C56CD9900064725 /* AppDelegate.swift */; };
 		3DD56EA22C56CD9900064725 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD56EA12C56CD9900064725 /* SceneDelegate.swift */; };
 		3DD56EA42C56CD9900064725 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD56EA32C56CD9900064725 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D0381962C57B6D300972520 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		3DD56E9C2C56CD9900064725 /* oCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD56E9F2C56CD9900064725 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DD56EA12C56CD9900064725 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D0381912C57AEA300972520 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3DD56EA32C56CD9900064725 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D0381922C57AEBE00972520 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3D0381932C57AEDA00972520 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D0381962C57B6D300972520 /* Crypto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D0381942C57AF4700972520 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3D0381952C57AF9200972520 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				3DD56E9F2C56CD9900064725 /* AppDelegate.swift */,
+				3DD56EA12C56CD9900064725 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
 		3DD56E932C56CD9900064725 = {
 			isa = PBXGroup;
 			children = (
@@ -44,6 +85,7 @@
 				3DD56E9D2C56CD9900064725 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		3DD56E9D2C56CD9900064725 /* Products */ = {
 			isa = PBXGroup;
@@ -56,9 +98,11 @@
 		3DD56E9E2C56CD9900064725 /* oCoin */ = {
 			isa = PBXGroup;
 			children = (
-				3DD56E9F2C56CD9900064725 /* AppDelegate.swift */,
-				3DD56EA12C56CD9900064725 /* SceneDelegate.swift */,
-				3DD56EA32C56CD9900064725 /* ViewController.swift */,
+				3D0381952C57AF9200972520 /* Delegate */,
+				3D0381942C57AF4700972520 /* Service */,
+				3D0381932C57AEDA00972520 /* Model */,
+				3D0381922C57AEBE00972520 /* ViewModel */,
+				3D0381912C57AEA300972520 /* View */,
 				3DD56EA52C56CD9900064725 /* Main.storyboard */,
 				3DD56EA82C56CD9B00064725 /* Assets.xcassets */,
 				3DD56EAA2C56CD9B00064725 /* LaunchScreen.storyboard */,
@@ -103,7 +147,7 @@
 				};
 			};
 			buildConfigurationList = 3DD56E972C56CD9900064725 /* Build configuration list for PBXProject "oCoin" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -138,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D0381972C57B6D300972520 /* Crypto.swift in Sources */,
 				3DD56EA42C56CD9900064725 /* ViewController.swift in Sources */,
 				3DD56EA02C56CD9900064725 /* AppDelegate.swift in Sources */,
 				3DD56EA22C56CD9900064725 /* SceneDelegate.swift in Sources */,
