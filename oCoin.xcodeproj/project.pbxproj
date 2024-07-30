@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		3D0381972C57B6D300972520 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0381962C57B6D300972520 /* Crypto.swift */; };
 		3D0381992C57C76200972520 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0381982C57C76200972520 /* Webservice.swift */; };
+		3D03819C2C58FDA300972520 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 3D03819B2C58FDA300972520 /* RxCocoa */; };
+		3D03819E2C58FDA300972520 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3D03819D2C58FDA300972520 /* RxSwift */; };
+		3D0381A42C5909B200972520 /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0381A32C5909B200972520 /* CryptoViewModel.swift */; };
 		3DD56EA02C56CD9900064725 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD56E9F2C56CD9900064725 /* AppDelegate.swift */; };
 		3DD56EA22C56CD9900064725 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD56EA12C56CD9900064725 /* SceneDelegate.swift */; };
 		3DD56EA42C56CD9900064725 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD56EA32C56CD9900064725 /* ViewController.swift */; };
@@ -20,6 +23,7 @@
 /* Begin PBXFileReference section */
 		3D0381962C57B6D300972520 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		3D0381982C57C76200972520 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		3D0381A32C5909B200972520 /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
 		3DD56E9C2C56CD9900064725 /* oCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD56E9F2C56CD9900064725 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DD56EA12C56CD9900064725 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D03819E2C58FDA300972520 /* RxSwift in Frameworks */,
+				3D03819C2C58FDA300972520 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +58,7 @@
 		3D0381922C57AEBE00972520 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3D0381A32C5909B200972520 /* CryptoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -130,6 +137,10 @@
 			dependencies = (
 			);
 			name = oCoin;
+			packageProductDependencies = (
+				3D03819B2C58FDA300972520 /* RxCocoa */,
+				3D03819D2C58FDA300972520 /* RxSwift */,
+			);
 			productName = oCoin;
 			productReference = 3DD56E9C2C56CD9900064725 /* oCoin.app */;
 			productType = "com.apple.product-type.application";
@@ -158,6 +169,9 @@
 				Base,
 			);
 			mainGroup = 3DD56E932C56CD9900064725;
+			packageReferences = (
+				3D03819A2C58FDA300972520 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 3DD56E9D2C56CD9900064725 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -190,6 +204,7 @@
 				3DD56EA02C56CD9900064725 /* AppDelegate.swift in Sources */,
 				3D0381992C57C76200972520 /* Webservice.swift in Sources */,
 				3DD56EA22C56CD9900064725 /* SceneDelegate.swift in Sources */,
+				3D0381A42C5909B200972520 /* CryptoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +425,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3D03819A2C58FDA300972520 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D03819B2C58FDA300972520 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D03819A2C58FDA300972520 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		3D03819D2C58FDA300972520 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D03819A2C58FDA300972520 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3DD56E942C56CD9900064725 /* Project object */;
 }
